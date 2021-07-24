@@ -21,4 +21,4 @@ clean:
 	rm -f *.o run
 
 run: ${COMMONSRC} ${COMMONHDR} ${SRC}
-	g++ ${COMMONSRC} ${SRC} -o $@ ${INCDIR} ${LIBS} -std=c++11 -pedantic -DBOOST_LOG_DYN_LINK
+	g++ ${COMMONSRC} ${SRC} -o $@ ${INCDIR} ${LIBS} -std=c++11 -DBOOST_LOG_DYN_LINK
